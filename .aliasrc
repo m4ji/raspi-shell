@@ -4,6 +4,7 @@
 alias sudo='doas --'
 alias fuck='doas "$BASH" -c "$(history -p !!)"'
 alias grab='doas apt install'
+alias throw='doas apt remove'
 alias relax='doas apt update && doas apt upgrade -y'
 alias yeet='doas apt autopurge'
 
@@ -41,6 +42,7 @@ alias myip='curl ip.me'
 alias gc='git clone'
 alias cl='clear'
 alias bye='exit'
+alias shr='source ~/.bashrc'
 
 # Power
 alias nap='doas reboot'
