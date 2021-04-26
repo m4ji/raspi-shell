@@ -43,6 +43,8 @@ alias gc='git clone'
 alias cl='clear'
 alias bye='exit'
 alias shr='source ~/.bashrc'
+alias alr='source ~/.aliasrc'
+alias ph='pihole'
 
 # Power
 alias nap='doas reboot'
