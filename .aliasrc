@@ -45,6 +45,8 @@ alias bye='exit'
 alias shr='source ~/.bashrc'
 alias alr='source ~/.aliasrc'
 alias ph='pihole'
+alias phg='pihole -g'
+alias check='ping -c 4 8.8.8.8'
 
 # Power
 alias nap='doas reboot'
