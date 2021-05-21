@@ -1,5 +1,9 @@
 # raspi-shell
-In the command line, run 
+In the command line, type
 ```
-preinstall.sh && install.sh && gc.sh
+cd raspi-shell
+```
+Then type
+```
+$ preinstall.sh && install.sh && gc.sh
 ```
