@@ -5,7 +5,7 @@ cd raspi-shell
 ```
 Then type
 ```
-sudo bash preinstall.sh && sudo bash install.sh && sudo bash gc.sh
+sudo bash newinstall.sh
 ```
 After the scripts finish, run these commands for doas
 ```
@@ -24,8 +24,4 @@ For the Pi-hole, type
 cd
 cd "Pi-hole/automated install/"
 sudo bash basic-install.sh
-```
-Finally, type
-```
-bash postinstall.sh
 ```
