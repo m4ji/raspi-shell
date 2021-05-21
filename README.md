@@ -7,8 +7,10 @@ Then type
 ```
 sudo bash preinstall.sh && sudo bash install.sh && sudo bash gc.sh
 ```
-After the scripts finish, run these commands for doas in the doas directory
+After the scripts finish, run these commands for doas
 ```
+cd
+cd doas
 make
 sudo make install
 sudo vidoas
@@ -19,6 +21,7 @@ permit nopass pi as root
 ```
 For the Pi-hole, type
 ```
+cd
 cd "Pi-hole/automated install/"
 sudo bash basic-install.sh
 ```
