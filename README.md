@@ -1,4 +1,4 @@
-# raspi-shell
+# new-pihole
 In the command line, type
 ```
 cd raspi-shell
