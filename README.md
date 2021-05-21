@@ -1,9 +1,9 @@
 # raspi-shell
 In the command line, type
 ```
-cd raspi-shell
+$ cd raspi-shell
 ```
 Then type
 ```
-$ preinstall.sh && install.sh && gc.sh
+$ sudo bash preinstall.sh && sudo bash install.sh && sudo bash gc.sh
 ```
