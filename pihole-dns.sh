@@ -11,8 +11,8 @@
 ### END INIT INFO
 echo "Setting up Google for Startup DNS"
 cp /home/pi/startup-dns /etc/resolv.conf
-echo "Waiting 1 minute"
-sleep 1m
+echo "Waiting 5 minutes"
+sleep 5m
 echo "Testing Internet connection and DNS resolution is ok..."
 wget -q --spider http://google.com
 
