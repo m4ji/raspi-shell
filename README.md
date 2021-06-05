@@ -5,7 +5,7 @@ cd new-pihole
 ```
 Then type
 ```
-sudo bash newinstall.sh
+sudo bash install.sh
 ```
 After the scripts finish, run these commands for doas
 ```
