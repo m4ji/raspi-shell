@@ -6,6 +6,6 @@ then
 elif [ `whoami` = root ];
 then
 	apt update && apt upgrade -y
-	apt install build-essential make bison flex libpam0g-dev
+	apt install -y build-essential make bison flex libpam0g-dev
 	exit
 fi
