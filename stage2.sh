@@ -12,7 +12,7 @@ then
 	cp ~/new-pihole/pihole-dns ~/etc/init.d/
 	chmod a+x ~/etc/init.d/pihole-dns.sh
 	update-rc.d pihole-dns.sh defaults
-	apt install vim python3-pip
+	apt install -y vim python3-pip
 	pip3 install bpytop --upgrade
 	exit
 fi
