@@ -7,21 +7,9 @@ Then type
 ```
 sudo bash install.sh
 ```
-After the scripts finish, run these commands for doas
-```
-cd
-cd doas
-make
-sudo make install
-sudo vidoas
-```
+Let script run and configure Pi-hole
+
 In vidoas, type
 ```
 permit nopass pi as root
-```
-For the Pi-hole, type
-```
-cd
-cd "Pi-hole/automated install/"
-sudo bash basic-install.sh
 ```
