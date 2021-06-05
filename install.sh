@@ -27,5 +27,6 @@ then
 	source /home/pi/.bashrc
 	source /home/pi/.aliasrc
 	bash /home/pi/Pi-hole/automated\ install/basic-install.sh
+	echo "Remember to delete this directory after this finishes"
 	exit
 fi
