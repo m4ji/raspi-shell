@@ -1,4 +1,4 @@
-#!/bash/bin
+#!/bin/bash
 if [ `whoami` != root ];
 then
 	echo "Run the script as root dumbass"
