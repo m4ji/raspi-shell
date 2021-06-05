@@ -10,6 +10,7 @@ then
 	apt install -y build-essential make bison flex libpam0g-dev vim python3-pip
 	cp /home/pi/new-pihole/.bashrc /home/pi/.bashrc
 	cp /home/pi/new-pihole/.aliasrc /home/pi
+	cp /home/pi/new-pihole/.profile /home/pi/.profile
 	cp /home/pi/new-pihole/default-dns /home/pi
 	cp /home/pi/new-pihole/startup-dns /home/pi
 	cp /home/pi/new-pihole/pihole-dns.sh /home/pi/etc/init.d
