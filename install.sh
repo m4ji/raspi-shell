@@ -20,9 +20,11 @@ then
 	cp /home/pi/new-pihole/startup-dns /home/pi
 	cp /home/pi/new-pihole/pihole-dns.sh /home/pi/etc/init.d
 # Sets script as executable
-	chmod a+x /home/pi/etc/init.d/pihole-dns.sh
+# Update: Command does not function as intended.  Run manually.
+	# chmod a+x /home/pi/etc/init.d/pihole-dns.sh
 # Allows script to run at boot
-	update-rc.d pihole-dns.sh defaults
+# Update: Command does not function as intended.  Run manually.
+	# update-rc.d pihole-dns.sh defaults
 # Installs bpytop
 	pip3 install bpytop --upgrade
 # Clones doas repository into home directory
