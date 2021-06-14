@@ -11,5 +11,5 @@ Let script run and configure Pi-hole
 
 In vidoas, type
 ```
-permit nopass pi as root
+permit nopass keepenv pi as root
 ```
