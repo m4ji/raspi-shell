@@ -25,7 +25,8 @@ then
 	git clone https://github.com/slicer69/doas /home/pi/doas
 # Builds and installs doas then cleans out build files
 	make --directory /home/pi/doas
-	make --directory /home/pi/doas clean install
+	make --directory /home/pi/doas clean
+	make --directory /home/pi/doas install
 # Clones Pi-hole repository into home
 	git clone --depth 1 https://github.com/pi-hole/pi-hole.git /home/pi/Pi-hole
 # Installs tldr
