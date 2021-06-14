@@ -7,8 +7,7 @@ then
 elif [ `whoami` = root ];
 then
 # Updates repositories and then applies any updates
-	apt update
-	apt upgrade -y
+	apt update && apt upgrade -y
 # Installs packages to complile doas along with vim and pip3
 	apt install -y build-essential make bison flex libpam0g-dev vim python3-pip
 # Applies personal aliases, bashrc, and profile
@@ -34,8 +33,7 @@ then
 	curl -o /home/pi/bin/tldr https://raw.githubusercontent.com/raylee/tldr/master/tldr
 	chmod +x /home/pi/bin/tldr
 # Sets new bashrc and alias settings
-	source /home/pi/.aliasrc
-	source /home/pi/.bashrc
+	source /home/pi/.aliasrc && source /home/pi/.bashrc
 # Runs install script for Pi-hole
 	bash /home/pi/Pi-hole/automated\ install/basic-install.sh
 	echo "Remember to delete this repository after this script finishes and the following commands"
