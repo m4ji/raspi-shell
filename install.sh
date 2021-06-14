@@ -19,19 +19,13 @@ then
 	cp /home/pi/new-pihole/default-dns /home/pi
 	cp /home/pi/new-pihole/startup-dns /home/pi
 	cp /home/pi/new-pihole/pihole-dns.sh /home/pi/etc/init.d
-# Sets script as executable
-# Update: Command does not function as intended.  Run manually.
-	# chmod a+x /home/pi/etc/init.d/pihole-dns.sh
-# Allows script to run at boot
-# Update: Command does not function as intended.  Run manually.
-	# update-rc.d pihole-dns.sh defaults
 # Installs bpytop
 	pip3 install bpytop --upgrade
 # Clones doas repository into home directory
 	git clone https://github.com/slicer69/doas /home/pi/doas
-# Builds and installs doas
+# Builds and installs doas then cleans out build files
 	make --directory /home/pi/doas
-	make --directory /home/pi/doas install
+	make --directory /home/pi/doas clean install
 # Clones Pi-hole repository into home
 	git clone --depth 1 https://github.com/pi-hole/pi-hole.git /home/pi/Pi-hole
 # Installs tldr
