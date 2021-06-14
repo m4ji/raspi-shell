@@ -43,6 +43,7 @@ then
 	source /home/pi/.bashrc
 # Runs install script for Pi-hole
 	bash /home/pi/Pi-hole/automated\ install/basic-install.sh
-	echo "Remember to delete this repository after this script finishes"
+	echo "Remember to delete this repository after this script finishes and the following commands"
+	echo "chmod a+x ~/etc/init.d/pihole.dns && sudo update-rc.d pihole-dns.sh"
 	exit
 fi
