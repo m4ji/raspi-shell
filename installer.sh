@@ -22,19 +22,19 @@ then
 	pip3 install bpytop --upgrade
 # Clones doas repository into home directory
 	git clone https://github.com/slicer69/doas /home/pi/doas
-# Builds and installs doas then cleans out build files
+# Perfoms a build and install for doas and then removes build files
 	make --directory /home/pi/doas
 	make --directory /home/pi/doas clean
 	make --directory /home/pi/doas install
-# Clones Pi-hole repository into home
-	git clone --depth 1 https://github.com/pi-hole/pi-hole.git /home/pi/Pi-hole
+# Downloads pihole installer
+	wget -O /home/pi/basic-install.sh https://install.pi-hole.net
 # Installs tldr
 	sudo wget -O /usr/local/bin/tldr
 	sudo chmod +x /usr/local/bin/tldr
 # Sets new bashrc and alias settings
 	source /home/pi/.aliasrc && source /home/pi/.bashrc
 # Runs install script for Pi-hole
-	bash /home/pi/Pi-hole/automated\ install/basic-install.sh
+	bash /home/pi/basic-install.sh
 	echo "Remember to delete this repository after this script finishes and the following commands"
 	echo "chmod a+x ~/etc/init.d/pihole.dns && sudo update-rc.d pihole-dns.sh"
 	exit
