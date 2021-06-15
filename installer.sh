@@ -29,7 +29,7 @@ then
 # Clones Pi-hole repository into home
 	git clone --depth 1 https://github.com/pi-hole/pi-hole.git /home/pi/Pi-hole
 # Installs tldr
-	sudo wget -qO /usr/local/bin/tldr
+	sudo wget -O /usr/local/bin/tldr
 	sudo chmod +x /usr/local/bin/tldr
 # Sets new bashrc and alias settings
 	source /home/pi/.aliasrc && source /home/pi/.bashrc
