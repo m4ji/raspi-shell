@@ -29,9 +29,8 @@ then
 # Clones Pi-hole repository into home
 	git clone --depth 1 https://github.com/pi-hole/pi-hole.git /home/pi/Pi-hole
 # Installs tldr
-	mkdir -p /home/pi/bin
-	curl -o /home/pi/bin/tldr https://raw.githubusercontent.com/raylee/tldr/master/tldr
-	chmod +x /home/pi/bin/tldr
+	sudo wget -qO /usr/local/bin/tldr
+	sudo chmod +x /usr/local/bin/tldr
 # Sets new bashrc and alias settings
 	source /home/pi/.aliasrc && source /home/pi/.bashrc
 # Runs install script for Pi-hole
