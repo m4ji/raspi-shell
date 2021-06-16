@@ -27,7 +27,7 @@ then
 	make --directory /home/pi/doas clean
 	make --directory /home/pi/doas install
 # Downloads pihole installer
-	wget -O /home/pi/basic-install.sh https://install.pi-hole.net
+	curl -sSL https://install.pi-hole.net | bash
 # Installs tldr
 	sudo wget -O /usr/local/bin/tldr
 	sudo chmod +x /usr/local/bin/tldr
