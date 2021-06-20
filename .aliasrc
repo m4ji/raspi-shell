@@ -50,7 +50,7 @@ alias check='ping -c 4 8.8.8.8'
 
 # Power
 alias nap='doas reboot'
-alias sleep='doas shutdown'
+alias sleep='doas shutdown -h now'
 
 # Terminal rickroll
 alias rr='curl -s -L https://raw.githubusercontent.com/keroserene/rickrollrc/master/roll.sh | bash'
