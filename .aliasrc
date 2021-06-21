@@ -46,7 +46,7 @@ alias shr='source ~/.bashrc'
 alias alr='source ~/.aliasrc'
 alias ph='pihole'
 alias phg='pihole -g'
-alias check='ping -c 4 8.8.8.8'
+alias check='ping -c 4 gnu.org'
 
 # Power
 alias nap='doas reboot'
