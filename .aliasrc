@@ -1,0 +1,52 @@
+#!/bin/bash
+
+# Updates
+alias sudo='doas'
+alias fuck='doas "$BASH" -c "$(history -p !!)"'
+alias relax='doas apt update && doas apt upgrade -y'
+alias yeet='doas apt autopurge'
+
+# Navigation
+alias ..='cd ..'
+alias ...='cd ../..'
+alias .3='cd ../../..'
+alias .4='cd ../../../..'
+alias .5='cd ../../../../..'
+
+# ls flag variations
+alias ls='exa'
+alias ll='exa -la --color=always'
+alias la='exa -a --color=always'
+alias lsd='exa -a --color=always --group-directories-first'
+
+# Storage
+alias df='df -h'
+alias free='free -h'
+
+# Overwrite confirmations
+alias cp='cp -i'
+alias mv='mv -i'
+alias rm='rm -i'
+
+# Termbin
+# Remember to add | before tb
+alias tb='nc termbin.com 9999'
+
+# Shortcuts
+alias v='vim'
+alias sv='doas vim'
+alias ctar='tar -czvf'
+alias untar='tar -xvf'
+alias myip='curl ip.me'
+alias gc='git clone'
+alias cl='clear'
+alias bye='exit'
+alias shr='source ~/.aliasrc && source ~/.bashrc'
+alias check='ping -c 4 gnu.org'
+
+# Power
+alias nap='doas reboot'
+alias sleep='doas shutdown -h now'
+
+# Terminal rickroll
+alias rr='curl -s -L https://raw.githubusercontent.com/keroserene/rickrollrc/master/roll.sh | bash'
