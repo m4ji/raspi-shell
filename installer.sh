@@ -29,8 +29,10 @@ then
 # Downloads pihole installer
 	curl -sSL https://install.pi-hole.net | bash
 # Installs tldr
-	sudo wget -O /usr/local/bin/tldr
+	sudo wget -qO /usr/local/bin/tldr
 	sudo chmod +x /usr/local/bin/tldr
+# Installs starship
+	sh -c "$(curl -fsSL https://starship.rs/install.sh)"
 # Sets new bashrc and alias settings
 	source /home/pi/.aliasrc && source /home/pi/.bashrc
 # Runs install script for Pi-hole
