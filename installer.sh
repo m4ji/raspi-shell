@@ -37,7 +37,5 @@ then
 	bash /home/pi/basic-install.sh
 	echo "Remember to delete this repository after this script finishes and the following commands"
 	echo "chmod a+x ~/etc/init.d/pihole.dns && sudo update-rc.d pihole-dns.sh"
-	echo "sh -c "$(curl -fsSL https://starship.rs/install.sh)""
-	echo "cp /home/pi/new-pihole/starship.toml /home/pi/.config/"
 	exit
 fi
