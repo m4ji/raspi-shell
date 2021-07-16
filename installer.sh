@@ -37,5 +37,6 @@ then
 	bash /home/pi/basic-install.sh
 	echo "Remember to delete this repository after this script finishes and the following commands"
 	echo "chmod a+x ~/etc/init.d/pihole.dns && sudo update-rc.d pihole-dns.sh"
+	echo "wget https://github.com/sharkdp/bat/releases/download/v0.18.2/bat_0.18.2_arm64.deb"
 	exit
 fi
