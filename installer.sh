@@ -12,11 +12,11 @@ then
 	apt install -y build-essential make bison flex libpam0g-dev vim python3-pip
 # Applies personal aliases, bashrc, and profile
 	cp /home/pi/new-pihole/.bashrc /home/pi/.bashrc
-	cp /home/pi/new-pihole/.aliasrc /home/pi
+	cp /home/pi/new-pihole/.aliasrc /home/pi/
 	cp /home/pi/new-pihole/.profile /home/pi/.profile
 # Used to add dns files to home directory for pihole-dns.sh
-	cp /home/pi/new-pihole/default-dns /home/pi
-	cp /home/pi/new-pihole/startup-dns /home/pi
+	cp /home/pi/new-pihole/default-dns /home/pi/
+	cp /home/pi/new-pihole/startup-dns /home/pi/
 	cp /home/pi/new-pihole/pihole-dns.sh /home/pi/etc/init.d
 # Installs bpytop
 	pip3 install bpytop --upgrade
@@ -24,15 +24,16 @@ then
 	git clone https://github.com/slicer69/doas /home/pi/doas
 # Perfoms a build and install for doas and then removes build files
 	make --directory /home/pi/doas
-	make --directory /home/pi/doas clean
 	make --directory /home/pi/doas install
+	make --directory /home/pi/doas clean
 # Downloads pihole installer
 	curl -sSL https://install.pi-hole.net | bash
 # Installs tldr
 	sudo wget -qO /usr/local/bin/tldr
 	sudo chmod +x /usr/local/bin/tldr
-# Installs starship
+# Installs starship and adds custom config
 	sh -c "$(curl -fsSL https://starship.rs/install.sh)"
+	cp /home/pi/new-pihole/starship.toml /home/pi/.config/
 # Sets new bashrc and alias settings
 	source /home/pi/.aliasrc && source /home/pi/.bashrc
 # Runs install script for Pi-hole
