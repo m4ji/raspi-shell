@@ -31,14 +31,13 @@ then
 # Installs tldr
 	sudo wget -qO /usr/local/bin/tldr
 	sudo chmod +x /usr/local/bin/tldr
-# Installs starship and adds custom config
-	sh -c "$(curl -fsSL https://starship.rs/install.sh)"
-	cp /home/pi/new-pihole/starship.toml /home/pi/.config/
 # Sets new bashrc and alias settings
 	source /home/pi/.aliasrc && source /home/pi/.bashrc
 # Runs install script for Pi-hole
 	bash /home/pi/basic-install.sh
 	echo "Remember to delete this repository after this script finishes and the following commands"
 	echo "chmod a+x ~/etc/init.d/pihole.dns && sudo update-rc.d pihole-dns.sh"
+	echo "sh -c "$(curl -fsSL https://starship.rs/install.sh)""
+	echo "cp /home/pi/new-pihole/starship.toml /home/pi/.config/"
 	exit
 fi
